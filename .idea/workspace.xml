@@ -4,18 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2d16c4c-f497-4045-bdc3-3e6191de9058" name="Changes" comment="The program can now read from a file, and also support reading and printing multiple matrices.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="a2d16c4c-f497-4045-bdc3-3e6191de9058" name="Changes" comment="Added comments and fixed formatting." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "asaran07"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/asaran07/minesweeper",
+    "accountId": "86796738-3158-492b-a1db-1797d83b8176"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -65,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719281646839</updated>
       <workItem from="1719281648044" duration="11831000" />
-      <workItem from="1719295291293" duration="3771000" />
+      <workItem from="1719295291293" duration="4101000" />
     </task>
     <task id="LOCAL-00001" summary="Added ability to read from and print the game-board.">
       <option name="closed" value="true" />
@@ -91,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719294782603</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added comments and fixed formatting.">
+      <option name="closed" value="true" />
+      <created>1719299320956</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719299320956</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +123,7 @@
     <MESSAGE value="Added ability to read from and print the game-board." />
     <MESSAGE value="Added functionality to update new positions around the mines." />
     <MESSAGE value="The program can now read from a file, and also support reading and printing multiple matrices." />
-    <option name="LAST_COMMIT_MESSAGE" value="The program can now read from a file, and also support reading and printing multiple matrices." />
+    <MESSAGE value="Added comments and fixed formatting." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments and fixed formatting." />
   </component>
 </project>
