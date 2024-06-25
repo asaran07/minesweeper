@@ -1,29 +1,44 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         String sampleString = """
-                ..*..
-                ....*
+                4 4
+                *...
+                ....
+                .*..
+                ....
+                3 5
+                **...
                 .....
                 .*...
-                *....
                 """;
-        int length = 5;
-        int width = 5;
 
-        char[][] gameBoard = new char[length][width];
-        Scanner scanner = new Scanner(sampleString);
+        Scanner scanner = new Scanner(new File("src/minesweeper_input.txt"));
+        int fieldNumber = 1;
+        while (scanner.hasNextLine()) {
+            String dimensions = scanner.nextLine();
+            if (dimensions.isEmpty()) {
+                continue;
+            }
+            int length = Integer.parseInt(dimensions.split(" ")[0]);
+            int width = Integer.parseInt(dimensions.split(" ")[1]);
+            char[][] gameBoard = new char[length][width];
 
-        fillNewGameBoard(gameBoard, length, width, scanner);
+            fillNewGameBoard(gameBoard, length, width, scanner);
 
-        System.out.println("Original game board:");
-        printBoard(gameBoard);
+//            System.out.printf("Field #%d:%n", fieldNumber);
+//            printBoard(gameBoard);
 
-        updateGameBoard(gameBoard);
+            updateGameBoard(gameBoard);
 
-        System.out.println("Updated game board:");
-        printBoard(gameBoard);
+            System.out.printf("Field #%d:%n", fieldNumber);
+            printBoard(gameBoard);
+            System.out.println();
+            fieldNumber++;
+        }
     }
 
     private static void fillNewGameBoard(char[][] gameBoard, int length, int width, Scanner scanner) {
